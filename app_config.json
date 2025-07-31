@@ -1,0 +1,8 @@
+{
+    "scheduler": {
+        "interval_minutes": 10
+    },
+    "etl": {
+        "chunk_size": 1000
+    }
+}
