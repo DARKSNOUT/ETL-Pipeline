@@ -107,4 +107,8 @@ The pipeline follows a modern data engineering workflow, ensuring data is proces
 To start the automated pipeline, run the main application using Uvicorn:
 
 The server will start, and the ETL process will be triggered at the interval defined in your .env file.
+<img width="956" height="479" alt="image" src="https://github.com/user-attachments/assets/c3b2a3d5-839e-4f37-ac69-c4525f37a571" />
+
+## 📄 License
+This project is distributed under the MIT License. See the LICENSE file for more information.
 
