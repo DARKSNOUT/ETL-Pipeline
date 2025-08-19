@@ -1,0 +1,70 @@
+use tuvlab_developer
+select * from dbo.vw_ReportStatus_test
+
+drop procedure dbo.data_Refresh_test
+
+CREATE OR ALTER PROCEDURE dbo.data_Refresh_test
+AS
+BEGIN
+    SET NOCOUNT ON;
+    -- Clear out the old data
+    TRUNCATE TABLE dbo.vw_ReportStatus_test;
+
+    -- Insert the fresh data from the last 90 days
+    INSERT INTO dbo.vw_ReportStatus_test (
+        reg_no,
+        reg_date,
+        report_release_date,
+        released,
+        test_end_date,
+        invoicing_type,
+        test_report_stage,
+        invoice_date,
+        buyer,
+        invoice_no,
+        modifieddt
+    )
+    SELECT
+        R.PermanantRegNo,
+        CONVERT(VARCHAR(10), R.RegDate, 103),
+        CONVERT(VARCHAR(10), R.RptReleaseDt, 103),
+        CASE R.Ready4Flag 
+            WHEN 10 THEN
+                CASE 
+                    WHEN CAST(CONVERT(VARCHAR(10), R.TestEndDt, 110) AS DATETIME) > R.RptReleaseDt THEN 'Delayed'
+                    WHEN CAST(CONVERT(VARCHAR(10), R.TestEndDt, 110) AS DATETIME) = R.RptReleaseDt THEN 'OnTime'
+                    ELSE 'Before Time' 
+                END
+            ELSE 'Not Released' 
+        END,
+        R.TestEndDt,
+        CASE 
+            WHEN ISNULL(SO.ProjectId, 0) > 0 THEN 'Project Based' 
+            WHEN ISNULL(SO.CategoryId, 0) > 0 THEN 'Category Based'
+            ELSE 
+                CASE 
+                    WHEN ISNULL(C.IsCombineInvoice, 0) = 1 THEN 'Combine Invoice'
+                    WHEN ISNULL(C.IsMonthlyInvoice, 0) = 1 THEN 'Monthly Inovice'
+                    ELSE 'Single Invoice' 
+                END 
+        END,
+        CASE R.Ready4Flag 
+            WHEN 4 THEN 'READY FOR INVOICEAPPROVAL' WHEN 5 THEN 'READY FOR ISSUING' WHEN 6 THEN 'ISSUED FOR TESTING' 
+            WHEN 7 THEN 'TESTED FOR SOME SAMPLES' WHEN 8 THEN 'READY FOR APPROVAL' WHEN 9 THEN 'APPROVED' WHEN 10 THEN 'TEST COMPLETED' 
+        END,
+        MI.InvoiceDate,
+        B.BuyerName,
+        MI.InvoiceNo,
+        R.modifieddt
+    FROM mstLaboratory ML
+    INNER JOIN RegsC() R ON ML.LabId = R.LabId
+    LEFT JOIN mstBuyers B ON R.BuyerId = B.BuyerId
+    INNER JOIN MInvoice() MI ON R.RecCourierId = MI.RecCourierId
+    LEFT JOIN Customers() C ON MI.CustId = C.CustomerId
+    LEFT JOIN SalesOrder SO ON R.SalesOrderNo = SO.SapSONo
+    INNER JOIN mstLabTypes ON R.LabTypeId = mstLabTypes.LabTypeId 
+END;
+
+select PermanantRegNo from RegsC()
+
+EXEC dbo.data_Refresh_test

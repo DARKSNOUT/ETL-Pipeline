@@ -442,6 +442,250 @@
             "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
             "start_time": "2025-07-31 12:37:03.591495",
             "end_time": "2025-07-31 12:37:24.751571"
+        },
+        "79e25099-abdd-487b-a2dd-9a2b43567040": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 86,
+            "total_rows_updated_in_cache": 18,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-05 13:30:24.557997",
+            "end_time": "2025-08-05 13:30:26.074480"
+        },
+        "b4853872-dfa5-4724-b13c-92e55fa0d862": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 0,
+            "total_rows_updated_in_cache": 0,
+            "exported_file": null,
+            "start_time": "2025-08-05 17:22:46.423653",
+            "end_time": "2025-08-05 17:22:46.874087"
+        },
+        "fcb562b7-a67f-4064-b2f4-3a7c65fb9eb7": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 86,
+            "total_rows_updated_in_cache": 20,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-05 17:24:25.166854",
+            "end_time": "2025-08-05 17:24:27.004398"
+        },
+        "7f5b6a6e-da06-4c03-b6d1-dc9e11d7bd1c": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 14558,
+            "total_rows_updated_in_cache": 5671,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-05 17:28:49.486009",
+            "end_time": "2025-08-05 17:29:06.995620"
+        },
+        "99f29046-6f9c-4948-b6b1-9f2b571cc680": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 3558,
+            "total_rows_updated_in_cache": 1557,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-06 10:14:09.109710",
+            "end_time": "2025-08-06 10:14:14.617056"
+        },
+        "3e06498a-6778-405e-ae66-3db21d34c66e": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 0,
+            "total_rows_updated_in_cache": 0,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-06 11:13:16.357531",
+            "end_time": "2025-08-06 11:13:17.758981"
+        },
+        "216651e7-4eb9-4317-8546-93fa7c6c5430": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 0,
+            "total_rows_updated_in_cache": 0,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-06 11:16:47.246884",
+            "end_time": "2025-08-06 11:16:48.585724"
+        },
+        "f0eb6d53-53b9-49f2-a217-73e7f1c47cb8": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 21040,
+            "total_rows_updated_in_cache": 5844,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-06 11:17:23.391883",
+            "end_time": "2025-08-06 11:17:49.179439"
+        },
+        "143e5a09-01ec-4e4c-988f-d327f7743756": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 22220,
+            "total_rows_updated_in_cache": 4876,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-06 11:32:31.749835",
+            "end_time": "2025-08-06 11:32:57.849446"
+        },
+        "80c256b4-36f3-448a-b45d-e53802bb1ffb": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 22220,
+            "total_rows_updated_in_cache": 4648,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-06 11:47:31.555544",
+            "end_time": "2025-08-06 11:47:58.043184"
+        },
+        "7f46c9f1-0c4d-4fe7-9647-999a4582d253": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 22220,
+            "total_rows_updated_in_cache": 4601,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-06 12:02:31.033916",
+            "end_time": "2025-08-06 12:02:57.659594"
+        },
+        "523a8d8d-b59f-4a5c-8e12-8e8fd1c0e09b": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 22220,
+            "total_rows_updated_in_cache": 4740,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-06 12:17:31.449726",
+            "end_time": "2025-08-06 12:17:58.599058"
+        },
+        "49387dee-781d-4229-bcac-ef9ad0be48b5": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 22220,
+            "total_rows_updated_in_cache": 4740,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-06 12:32:31.104870",
+            "end_time": "2025-08-06 12:32:57.641405"
+        },
+        "1a483295-128d-4de0-9d78-3554538854a2": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 0,
+            "total_rows_updated_in_cache": 0,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-07 10:33:30.519899",
+            "end_time": "2025-08-07 10:33:33.718000"
+        },
+        "a8755b16-6b90-4ea6-8c1f-61581bc2c0a9": {
+            "status": "complete- 1000 per chunk",
+            "message": "Full sync finished.",
+            "total_rows_received": 113953,
+            "total_rows_updated_in_cache": 110732,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-07 12:08:25.968653",
+            "end_time": "2025-08-07 12:11:11.261658"
+        },
+        "af1cecbe-c513-4ae9-b6cb-ccb43c8d8be4": {
+            "status": "complete-1000 per chunk",
+            "message": "Full sync finished.",
+            "total_rows_received": 113953,
+            "total_rows_updated_in_cache": 86564,
+            "exported_file": null,
+            "start_time": "2025-08-07 12:14:28.801592",
+            "end_time": "2025-08-07 12:16:58.086228"
+        },
+        "bb71c100-7961-4e85-9640-a7171ad08f10": {
+            "status": "complete- 3000 per chunk",
+            "message": "Full sync finished.",
+            "total_rows_received": 113953,
+            "total_rows_updated_in_cache": 86564,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-07 12:25:36.189508",
+            "end_time": "2025-08-07 12:26:42.132012"
+        },
+        "ec3dd6a8-6661-43ee-bba7-067af88ffd95": {
+            "status": "complete-3000 per chunk",
+            "message": "Full sync finished.",
+            "total_rows_received": 113953,
+            "total_rows_updated_in_cache": 86564,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-07 12:27:07.528153",
+            "end_time": "2025-08-07 12:28:21.153879"
+        },
+        "be242f5c-4f5b-40bd-8501-c8b0f29fa414": {
+            "status": "complete- 5000 per chunk",
+            "message": "Full sync finished.",
+            "total_rows_received": 113953,
+            "total_rows_updated_in_cache": 86564,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-07 12:28:13.675798",
+            "end_time": "2025-08-07 12:29:07.006643"
+        },
+        "66f5f72a-2b80-4588-a243-77bdc9150c7f": {
+            "status": "complete-10000 per chunk",
+            "message": "Full sync finished.",
+            "total_rows_received": 113953,
+            "total_rows_updated_in_cache": 86564,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-07 12:31:02.255122",
+            "end_time": "2025-08-07 12:31:37.213720"
+        },
+        "32b151ca-309e-41ba-8608-6445e30ab140": {
+            "status": "complete - 10000 chunks",
+            "message": "Full sync finished.",
+            "total_rows_received": 113953,
+            "total_rows_updated_in_cache": 86564,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-07 12:51:03.324843",
+            "end_time": "2025-08-07 12:52:07.773331"
+        },
+        "aafdb4fd-0f79-454e-a683-e36d803dcd32": {
+            "status": "running",
+            "start_time": "2025-08-07 13:06:03.412895",
+            "message": "Full sync started."
+        },
+        "fb0a4715-e7d3-4557-9e3e-d430e397143c": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 113953,
+            "total_rows_updated_in_cache": 86517,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-07 14:03:32.177118",
+            "end_time": "2025-08-07 14:04:40.637819"
+        },
+        "5d235969-78f6-4664-80ed-cdd54128212c": {
+            "status": "running",
+            "start_time": "2025-08-07 14:08:52.695344",
+            "message": "Full sync started."
+        },
+        "4e351cdc-0362-4b81-a503-8b8d8c53c2d8": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 113953,
+            "total_rows_updated_in_cache": 86552,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-07 14:12:41.616686",
+            "end_time": "2025-08-07 14:13:14.542213"
+        },
+        "38242d84-b8d9-4b2b-bc79-81333a733d6b": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 113953,
+            "total_rows_updated_in_cache": 86564,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-07 14:14:04.597487",
+            "end_time": "2025-08-07 14:14:36.913592"
+        },
+        "f2808f26-391f-4842-9f27-b2c6f0081b87": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 113953,
+            "total_rows_updated_in_cache": 86564,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-07 14:27:39.815778",
+            "end_time": "2025-08-07 14:28:24.491988"
+        },
+        "3f5b7575-ad30-4ff2-b379-402cce3cf271": {
+            "status": "complete",
+            "message": "Full sync finished.",
+            "total_rows_received": 113953,
+            "total_rows_updated_in_cache": 86564,
+            "exported_file": "C:\\Users\\panch-hr\\source\\repos\\fast-api\\final_project\\exports\\etl_master_export.xlsx",
+            "start_time": "2025-08-07 14:42:39.746860",
+            "end_time": "2025-08-07 14:43:11.411998"
         }
     }
 }

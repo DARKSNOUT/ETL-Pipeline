@@ -22,8 +22,7 @@ COMMON_EXPORT_FILENAME = "etl_master_export.xlsx"
 
 def export_data_to_excel() -> str | None:
     """
-    Reads all data from the SQLite cache and exports it to a common Excel file,
-    overwriting it if it already exists.
+    Reads all data from the SQLite cache and exports it to a common Excel file, overwriting it if it already exists.
     Returns the path to the exported file on success, otherwise None.
     """
     logger.info(f"Starting export of SQLite data to '{COMMON_EXPORT_FILENAME}'...")

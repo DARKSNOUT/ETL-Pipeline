@@ -35,10 +35,8 @@ def get_logger(logger_name: str):
     # Get a logger with the specified name
     logger = logging.getLogger(logger_name)
     logger.setLevel(LOG_LEVEL)
-
     # Prevent log messages from being duplicated in parent loggers
     logger.propagate = False
-
     # Add handlers only if they haven't been added already
     if not logger.handlers:
         logger.addHandler(get_console_handler())

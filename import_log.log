@@ -1,0 +1,8 @@
+2025-08-07 11:16:40,429 [INFO] Loading Excel file from: C:\Users\panch-hr\source\repos\fast-api\final_project\exports\Data_GGN.xlsx
+2025-08-07 11:16:53,891 [INFO] Excel file loaded successfully with shape (135544, 11)
+2025-08-07 11:16:53,892 [INFO] Renaming columns...
+2025-08-07 11:16:53,900 [INFO] Columns renamed and row_num added.
+2025-08-07 11:16:53,900 [INFO] Checking final DataFrame columns: ['reg_no', 'reg_date', 'report_release_date', 'released', 'test_end_date', 'invoicing_type', 'test_report_stage', 'invoice_date', 'buyer', 'invoice_no', ' modifieddt', 'row_num']
+2025-08-07 11:16:53,901 [ERROR] Excel columns do not match the expected schema.
+2025-08-07 11:19:50,565 [INFO] Loading CSV file from: C:\Users\panch-hr\source\repos\fast-api\final_project\exports\Data_GGN.csv
+2025-08-07 11:19:50,569 [ERROR] Failed to read CSV file: 'utf-8' codec can't decode byte 0x96 in position 167144: invalid start byte

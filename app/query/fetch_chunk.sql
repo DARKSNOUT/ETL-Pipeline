@@ -1,4 +1,8 @@
-SELECT * FROM test_analysis_data WHERE {id_column} > :last_id 
-ORDER BY {id_column} 
-OFFSET 0 ROWS
+-- fetch_chunk.sql
+-- This query now uses named parameters for offset and chunk size
+
+SELECT * FROM dbo.vw_ReportStatus_test
+WHERE invoice_date < '2025-05-21'
+ORDER BY {id_column}
+OFFSET :offset ROWS
 FETCH NEXT :chunk_size ROWS ONLY;

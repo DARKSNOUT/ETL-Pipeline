@@ -16,7 +16,6 @@ from app.core.config_manager import get_config, save_config
 # Updated import to be more direct
 from app.api.v1.endpoints import router as api_v1_router
 
-
 # Initialize a logger for startup messages
 logger = get_logger(__name__)
 
@@ -42,8 +41,6 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.error(f"Error during scheduler shutdown: {e}", exc_info=True)
 
-
-# --- Update the FastAPI instance to use the lifespan function ---
 app = FastAPI(
     title="ETL Pipeline API",
     description="API to trigger and monitor the data pipeline.",
@@ -55,7 +52,6 @@ app = FastAPI(
 app.include_router(api_v1_router, prefix="/api/v1", tags=["ETL"])
 
 # --- UPDATED: Configuration Panel Endpoint ---
-
 @app.get("/config", response_class=HTMLResponse, tags=["Configuration"])
 async def get_config_page():
     """Serves the HTML page for the configuration panel using a robust FileResponse."""

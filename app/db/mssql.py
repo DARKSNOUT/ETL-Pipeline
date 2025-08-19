@@ -9,6 +9,7 @@ from app.core.logging import get_logger
 logger = get_logger(__name__)
 
 try:
+    # Create the SQLAlchemy engine using the URL from our config
     engine = create_engine(
         settings.database_url,
         pool_size=5,
@@ -19,11 +20,6 @@ try:
     logger.info("Database engine created successfully.")
 except Exception as e:
     logger.critical(f"Failed to create database engine: {e}")
-    # Depending on the strategy, you might want to exit here
-
-#--------------------------------------------------------------------#
-# These functions handle reading/writing the last processed ID (offset)
-#--------------------------------------------------------------------#
 
 def load_last_id(filename: str) -> str | None:
     """Loads the last processed ID from a JSON file."""
@@ -49,8 +45,6 @@ def save_last_id(last_id: str, filename: str):
     except IOError as e:
         logger.error(f"Could not write to offset file '{filename}': {e}")
 
-#--------------------------------------------------------------------#
-
 def fetch_data_as_dict(query: str, params: dict | None = None) -> list[dict] | None:
     """
     Fetches data from the database using a given query and returns a list of dictionaries.
@@ -61,10 +55,7 @@ def fetch_data_as_dict(query: str, params: dict | None = None) -> list[dict] | N
             result = conn.execute(text(query), params or {})
             rows = result.fetchall()
             columns = result.keys()
-            
-            # Use a list comprehension for efficiency
             data = [dict(zip(columns, row)) for row in rows]
-            
             logger.info(f"Query executed successfully. Rows fetched: {len(data)}")
             return data
     except SQLAlchemyError as e:
@@ -73,3 +64,24 @@ def fetch_data_as_dict(query: str, params: dict | None = None) -> list[dict] | N
     except Exception as e:
         logger.error(f"An unexpected error occurred during data fetch: {e}", exc_info=True)
         return None
+
+def execute_raw_sql(sql_command: str) -> bool:
+    """
+    Executes a raw SQL command that does not return rows (e.g., a stored procedure).
+    This is ideal for running commands like 'EXEC dbo.some_procedure'.
+    Returns True on success, False on failure.
+    """
+    logger.info(f"Executing raw SQL command: {sql_command}")
+    try:
+        with engine.connect() as conn:
+            # Use a transaction to ensure the command is committed
+            with conn.begin() as trans:
+                conn.execute(text(sql_command))
+            logger.info("Successfully executed and committed raw SQL command.")
+            return True
+    except SQLAlchemyError as e:
+        logger.error(f"Database error during raw SQL execution: {e}", exc_info=True)
+        return False
+    except Exception as e:
+        logger.error(f"An unexpected error occurred during raw SQL execution: {e}", exc_info=True)
+        return False

@@ -21,6 +21,7 @@ except NameError:
 @router.post("/trigger-etl", status_code=202)
 def trigger_etl_pipeline(background_tasks: BackgroundTasks):
     """Triggers the ETL pipeline and returns a unique task_id."""
+    
     logger.info("Received request to trigger ETL pipeline.")
     try:
         task_id = str(uuid.uuid4())

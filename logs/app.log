@@ -1,0 +1,89 @@
+2025-08-07 14:42:29,744 - app.db.mssql - INFO - [mssql.py:80] - Successfully executed and committed raw SQL command.
+2025-08-07 14:42:29,745 - app.core.scheduler - INFO - [scheduler.py:51] - Data refresh procedure executed. Waiting for 10 seconds for changes to propagate...
+2025-08-07 14:42:39,746 - app.services.etl - INFO - [etl.py:88] - Starting FULL ETL sync for task_id: 3f5b7575-ad30-4ff2-b379-402cce3cf271 using OFFSET pagination...
+2025-08-07 14:42:39,752 - app.services.etl - INFO - [etl.py:92] - Using chunk size of 10000 from configuration.
+2025-08-07 14:42:39,780 - app.services.etl - INFO - [etl.py:77] - Successfully updated status for task 3f5b7575-ad30-4ff2-b379-402cce3cf271.
+2025-08-07 14:42:39,781 - app.services.etl - INFO - [etl.py:45] - Loading SQL query from: C:\Users\panch-hr\source\repos\fast-api\final_project\app\query\fetch_chunk.sql
+2025-08-07 14:42:39,782 - app.services.etl - INFO - [etl.py:115] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Fetching chunk with OFFSET 0.
+2025-08-07 14:42:39,783 - app.db.mssql - INFO - [mssql.py:52] - Executing query to fetch data...
+2025-08-07 14:42:40,029 - app.db.mssql - INFO - [mssql.py:59] - Query executed successfully. Rows fetched: 10000
+2025-08-07 14:42:40,093 - app.services.etl - INFO - [etl.py:62] - Processed and hashed 10000 rows.
+2025-08-07 14:42:40,269 - app.db.sqlite_manager - INFO - [sqlite_manager.py:100] - Upsert complete. Rows affected: 8106
+2025-08-07 14:42:40,270 - app.services.etl - INFO - [etl.py:138] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Processed chunk of 10000 rows. Total processed: 10000.
+2025-08-07 14:42:41,271 - app.services.etl - INFO - [etl.py:115] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Fetching chunk with OFFSET 10000.
+2025-08-07 14:42:41,273 - app.db.mssql - INFO - [mssql.py:52] - Executing query to fetch data...
+2025-08-07 14:42:41,586 - app.db.mssql - INFO - [mssql.py:59] - Query executed successfully. Rows fetched: 10000
+2025-08-07 14:42:41,653 - app.services.etl - INFO - [etl.py:62] - Processed and hashed 10000 rows.
+2025-08-07 14:42:41,848 - app.db.sqlite_manager - INFO - [sqlite_manager.py:100] - Upsert complete. Rows affected: 7937
+2025-08-07 14:42:41,849 - app.services.etl - INFO - [etl.py:138] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Processed chunk of 10000 rows. Total processed: 20000.
+2025-08-07 14:42:42,850 - app.services.etl - INFO - [etl.py:115] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Fetching chunk with OFFSET 20000.
+2025-08-07 14:42:42,851 - app.db.mssql - INFO - [mssql.py:52] - Executing query to fetch data...
+2025-08-07 14:42:43,120 - app.db.mssql - INFO - [mssql.py:59] - Query executed successfully. Rows fetched: 10000
+2025-08-07 14:42:43,185 - app.services.etl - INFO - [etl.py:62] - Processed and hashed 10000 rows.
+2025-08-07 14:42:43,365 - app.db.sqlite_manager - INFO - [sqlite_manager.py:100] - Upsert complete. Rows affected: 7789
+2025-08-07 14:42:43,366 - app.services.etl - INFO - [etl.py:138] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Processed chunk of 10000 rows. Total processed: 30000.
+2025-08-07 14:42:44,367 - app.services.etl - INFO - [etl.py:115] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Fetching chunk with OFFSET 30000.
+2025-08-07 14:42:44,368 - app.db.mssql - INFO - [mssql.py:52] - Executing query to fetch data...
+2025-08-07 14:42:44,621 - app.db.mssql - INFO - [mssql.py:59] - Query executed successfully. Rows fetched: 10000
+2025-08-07 14:42:44,686 - app.services.etl - INFO - [etl.py:62] - Processed and hashed 10000 rows.
+2025-08-07 14:42:44,865 - app.db.sqlite_manager - INFO - [sqlite_manager.py:100] - Upsert complete. Rows affected: 8070
+2025-08-07 14:42:44,866 - app.services.etl - INFO - [etl.py:138] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Processed chunk of 10000 rows. Total processed: 40000.
+2025-08-07 14:42:45,867 - app.services.etl - INFO - [etl.py:115] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Fetching chunk with OFFSET 40000.
+2025-08-07 14:42:45,867 - app.db.mssql - INFO - [mssql.py:52] - Executing query to fetch data...
+2025-08-07 14:42:46,102 - app.db.mssql - INFO - [mssql.py:59] - Query executed successfully. Rows fetched: 10000
+2025-08-07 14:42:46,170 - app.services.etl - INFO - [etl.py:62] - Processed and hashed 10000 rows.
+2025-08-07 14:42:46,358 - app.db.sqlite_manager - INFO - [sqlite_manager.py:100] - Upsert complete. Rows affected: 8097
+2025-08-07 14:42:46,359 - app.services.etl - INFO - [etl.py:138] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Processed chunk of 10000 rows. Total processed: 50000.
+2025-08-07 14:42:47,360 - app.services.etl - INFO - [etl.py:115] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Fetching chunk with OFFSET 50000.
+2025-08-07 14:42:47,361 - app.db.mssql - INFO - [mssql.py:52] - Executing query to fetch data...
+2025-08-07 14:42:47,623 - app.db.mssql - INFO - [mssql.py:59] - Query executed successfully. Rows fetched: 10000
+2025-08-07 14:42:47,699 - app.services.etl - INFO - [etl.py:62] - Processed and hashed 10000 rows.
+2025-08-07 14:42:47,882 - app.db.sqlite_manager - INFO - [sqlite_manager.py:100] - Upsert complete. Rows affected: 7299
+2025-08-07 14:42:47,883 - app.services.etl - INFO - [etl.py:138] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Processed chunk of 10000 rows. Total processed: 60000.
+2025-08-07 14:42:48,884 - app.services.etl - INFO - [etl.py:115] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Fetching chunk with OFFSET 60000.
+2025-08-07 14:42:48,885 - app.db.mssql - INFO - [mssql.py:52] - Executing query to fetch data...
+2025-08-07 14:42:49,166 - app.db.mssql - INFO - [mssql.py:59] - Query executed successfully. Rows fetched: 10000
+2025-08-07 14:42:49,235 - app.services.etl - INFO - [etl.py:62] - Processed and hashed 10000 rows.
+2025-08-07 14:42:49,403 - app.db.sqlite_manager - INFO - [sqlite_manager.py:100] - Upsert complete. Rows affected: 6911
+2025-08-07 14:42:49,404 - app.services.etl - INFO - [etl.py:138] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Processed chunk of 10000 rows. Total processed: 70000.
+2025-08-07 14:42:50,405 - app.services.etl - INFO - [etl.py:115] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Fetching chunk with OFFSET 70000.
+2025-08-07 14:42:50,407 - app.db.mssql - INFO - [mssql.py:52] - Executing query to fetch data...
+2025-08-07 14:42:50,705 - app.db.mssql - INFO - [mssql.py:59] - Query executed successfully. Rows fetched: 10000
+2025-08-07 14:42:50,772 - app.services.etl - INFO - [etl.py:62] - Processed and hashed 10000 rows.
+2025-08-07 14:42:50,936 - app.db.sqlite_manager - INFO - [sqlite_manager.py:100] - Upsert complete. Rows affected: 7541
+2025-08-07 14:42:50,936 - app.services.etl - INFO - [etl.py:138] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Processed chunk of 10000 rows. Total processed: 80000.
+2025-08-07 14:42:51,938 - app.services.etl - INFO - [etl.py:115] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Fetching chunk with OFFSET 80000.
+2025-08-07 14:42:51,939 - app.db.mssql - INFO - [mssql.py:52] - Executing query to fetch data...
+2025-08-07 14:42:52,260 - app.db.mssql - INFO - [mssql.py:59] - Query executed successfully. Rows fetched: 10000
+2025-08-07 14:42:52,343 - app.services.etl - INFO - [etl.py:62] - Processed and hashed 10000 rows.
+2025-08-07 14:42:52,540 - app.db.sqlite_manager - INFO - [sqlite_manager.py:100] - Upsert complete. Rows affected: 8111
+2025-08-07 14:42:52,541 - app.services.etl - INFO - [etl.py:138] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Processed chunk of 10000 rows. Total processed: 90000.
+2025-08-07 14:42:53,542 - app.services.etl - INFO - [etl.py:115] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Fetching chunk with OFFSET 90000.
+2025-08-07 14:42:53,543 - app.db.mssql - INFO - [mssql.py:52] - Executing query to fetch data...
+2025-08-07 14:42:53,871 - app.db.mssql - INFO - [mssql.py:59] - Query executed successfully. Rows fetched: 10000
+2025-08-07 14:42:53,937 - app.services.etl - INFO - [etl.py:62] - Processed and hashed 10000 rows.
+2025-08-07 14:42:54,115 - app.db.sqlite_manager - INFO - [sqlite_manager.py:100] - Upsert complete. Rows affected: 7222
+2025-08-07 14:42:54,116 - app.services.etl - INFO - [etl.py:138] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Processed chunk of 10000 rows. Total processed: 100000.
+2025-08-07 14:42:55,117 - app.services.etl - INFO - [etl.py:115] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Fetching chunk with OFFSET 100000.
+2025-08-07 14:42:55,119 - app.db.mssql - INFO - [mssql.py:52] - Executing query to fetch data...
+2025-08-07 14:42:55,412 - app.db.mssql - INFO - [mssql.py:59] - Query executed successfully. Rows fetched: 10000
+2025-08-07 14:42:55,481 - app.services.etl - INFO - [etl.py:62] - Processed and hashed 10000 rows.
+2025-08-07 14:42:55,648 - app.db.sqlite_manager - INFO - [sqlite_manager.py:100] - Upsert complete. Rows affected: 6790
+2025-08-07 14:42:55,649 - app.services.etl - INFO - [etl.py:138] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Processed chunk of 10000 rows. Total processed: 110000.
+2025-08-07 14:42:56,650 - app.services.etl - INFO - [etl.py:115] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Fetching chunk with OFFSET 110000.
+2025-08-07 14:42:56,651 - app.db.mssql - INFO - [mssql.py:52] - Executing query to fetch data...
+2025-08-07 14:42:56,901 - app.db.mssql - INFO - [mssql.py:59] - Query executed successfully. Rows fetched: 3953
+2025-08-07 14:42:56,933 - app.services.etl - INFO - [etl.py:62] - Processed and hashed 3953 rows.
+2025-08-07 14:42:57,021 - app.db.sqlite_manager - INFO - [sqlite_manager.py:100] - Upsert complete. Rows affected: 2691
+2025-08-07 14:42:57,022 - app.services.etl - INFO - [etl.py:138] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Processed chunk of 3953 rows. Total processed: 113953.
+2025-08-07 14:42:58,023 - app.services.etl - INFO - [etl.py:115] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: Fetching chunk with OFFSET 113953.
+2025-08-07 14:42:58,024 - app.db.mssql - INFO - [mssql.py:52] - Executing query to fetch data...
+2025-08-07 14:42:58,282 - app.db.mssql - INFO - [mssql.py:59] - Query executed successfully. Rows fetched: 0
+2025-08-07 14:42:58,289 - app.services.etl - INFO - [etl.py:125] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271: No more data found. Sync complete.
+2025-08-07 14:42:58,290 - app.services.exporter - INFO - [exporter.py:28] - Starting export of SQLite data to 'etl_master_export.xlsx'...
+2025-08-07 14:43:11,393 - app.services.exporter - INFO - [exporter.py:52] - Successfully exported and refreshed 71969 rows to C:\Users\panch-hr\source\repos\fast-api\final_project\exports\etl_master_export.xlsx
+2025-08-07 14:43:11,433 - app.services.etl - INFO - [etl.py:77] - Successfully updated status for task 3f5b7575-ad30-4ff2-b379-402cce3cf271.
+2025-08-07 14:43:11,434 - app.services.etl - INFO - [etl.py:154] - Full sync task 3f5b7575-ad30-4ff2-b379-402cce3cf271 has completed.
+2025-08-07 14:43:11,438 - app.core.scheduler - INFO - [scheduler.py:57] - Scheduled FULL sync cycle for task 3f5b7575-ad30-4ff2-b379-402cce3cf271 has completed successfully.
+2025-08-07 14:43:13,822 - app.main - INFO - [main.py:37] - Application shutdown...
+2025-08-07 14:43:13,823 - app.main - INFO - [main.py:40] - Scheduler shut down successfully.
